@@ -5,7 +5,7 @@ import {
   fetchInventoryRequest,
   fetchInventorySuccess,
   fetchInventoryFailure,
-} from "../actions/inventoryActions";
+} from "../../actions/inventoryActions";
 
 const InventoryList = ({
   inventory,
