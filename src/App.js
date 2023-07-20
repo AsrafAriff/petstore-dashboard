@@ -1,9 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Inventory from "./components/Inventory/Inventory";
+import React from "react";
+import Navbar from "./components/util/Navbar";
+import AppRouter from "./components/util/Router";
 
-function App() {
-  return <Inventory></Inventory>;
-}
+const App = () => {
+  return (
+    <div>
+      <Navbar />
+      <h1>Your App Content</h1>
+      <AppRouter></AppRouter>
+    </div>
+  );
+};
 
 export default App;

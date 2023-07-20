@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu a {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
